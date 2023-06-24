@@ -15,7 +15,7 @@ function App() {
         id={i.id}
         title={i.title}
         amount={i.amount}
-        date={i.date.toString()}
+        date={i.date}
         location={i.location}
         ></ExpenseItem>
       })}
