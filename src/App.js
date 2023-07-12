@@ -1,5 +1,5 @@
 import ExpenseItem from "./components/Expenses/ExpenseItem";
-
+import ExpenseForm from "./components/Expenses/ExpenseForm";
 function App() {
   const expenses = [
     { id: 'e1', title: 'Toilet Paper', amount: 94.12, date: new Date(2020, 7, 14), location:'Nsp'},
@@ -19,6 +19,7 @@ function App() {
         location={i.location}
         ></ExpenseItem>
       })}
+      <ExpenseForm></ExpenseForm>
     </div>
   );
 }
