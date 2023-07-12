@@ -1,5 +1,5 @@
 import ExpenseItem from "./components/Expenses/ExpenseItem";
-import ExpenseForm from "./components/Expenses/ExpenseForm";
+import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
   const expenses = [
     { id: 'e1', title: 'Toilet Paper', amount: 94.12, date: new Date(2020, 7, 14), location:'Nsp'},
@@ -9,7 +9,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's Get started!</h2>
+      <NewExpense></NewExpense>
       {expenses.map(i=>{
         return <ExpenseItem
         id={i.id}
@@ -19,7 +19,6 @@ function App() {
         location={i.location}
         ></ExpenseItem>
       })}
-      <ExpenseForm></ExpenseForm>
     </div>
   );
 }
