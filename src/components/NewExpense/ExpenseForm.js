@@ -36,8 +36,11 @@ const ExpenseForm = (prop) => {
       date: new Date(enterDate),
       location: enterLocation,
     };
-
-    prop.onSaveExpense(newExpense)
+    const expense={
+      id:Math.random().toString(),
+      ...newExpense
+    }
+    prop.onSaveExpense(expense)
     
     setEnteredTitle('')
     setEnteredAmount('')

@@ -16,13 +16,16 @@ const ExpenseItem=(prop)=>{
     //     document.getElementById('count').innerHTML=count
     //     console.log(count)
     // };
+
     return (
-    <Card className='expense-item'>
-        <ExpenseDate date={prop.date}/>
-        <ExpenseDetails amount={amount}  location={prop.location}   title={prop.title} />
-        <button onClick={clickHandler}>Update Amount</button>
+    <div>
+        <Card className='expense-item'>
+            <ExpenseDate date={prop.date}/>
+            <ExpenseDetails amount={amount}  location={prop.location}   title={prop.title} />
+            <button onClick={clickHandler}>Update Amount</button>
         {/* <button id='count' onClick={countInc}>{count}</button> */}
-    </Card>
+        </Card>
+    </div>
     )
 }
 
