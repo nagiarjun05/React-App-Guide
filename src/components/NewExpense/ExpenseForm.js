@@ -94,9 +94,10 @@ const ExpenseForm = (prop) => {
             placeholder="Expense Location...."
           ></input>
         </div>
-        <div className="new-expense__actions">
-          <button type="submit">Add Expense</button>
-        </div>
+        <div className='new-expense__actions'>
+          <button type="button" onClick={prop.onCancel}>Cancel</button>
+          <button type='submit'>Add Expense</button>
+      </div>
       </div>
     </form>
   );
